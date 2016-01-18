@@ -34,6 +34,9 @@ public class AnnotationTutor extends Tutor {
         boolean myAnnotation = method.isAnnotationPresent(MyAnnotation.class);
         log("my annotation name="+annotation.name());
 
+        // TODO: show information about all annotated fields
+        // print name and properties of the annotations
+
         Field[] fields = cls.getDeclaredFields();
         for(Field field : fields) {
             Annotation[] annotations = field.getAnnotations();
@@ -55,6 +58,10 @@ public class AnnotationTutor extends Tutor {
     }
 
     public String getFieldValue(Object obj, String fieldName) {
+
+        // TODO: should return the value of field
+        // or defValue, if field was annotated by @Default and field is not set
+
         Class<?> clazz = null;
         Field field = null;
         try {

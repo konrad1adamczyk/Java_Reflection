@@ -28,7 +28,7 @@ public class ReflectionTutor extends Tutor {
             for(Method m : methods) {
                 System.out.println(m.getName());
                 System.out.println(m.getReturnType());
-                System.out.println("======================");
+                System.out.println("----------------------");
             }
 
             // TODO: list all fields and types of the class
@@ -36,7 +36,7 @@ public class ReflectionTutor extends Tutor {
             for(Field f : fields) {
                 System.out.println(f.getName());
                 System.out.println(f.getType());
-                System.out.println("++++++++++++++++++++++");
+                System.out.println("----------------------");
             }
 
             // TODO: call the printIt() method
